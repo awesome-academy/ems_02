@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 2019_08_07_024326) do
     t.integer "subject_id"
     t.integer "create_by"
     t.integer "mark_require"
+    t.datetime "start_date"
+    t.datetime "end_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -38,7 +40,7 @@ ActiveRecord::Schema.define(version: 2019_08_07_024326) do
     t.boolean "status"
     t.integer "subject_id"
     t.integer "create_by"
-    t.string "type"
+    t.string "question_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
